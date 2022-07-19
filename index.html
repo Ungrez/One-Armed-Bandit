@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One hand bandit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/result.js"></script>
+    <script src="scripts/wallet.js"></script>
+    <script src="scripts/draw.js"></script>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <section id="main">
+        <section id="drawField">
+            <section id="startDraw">
+                <div class="matchField"></div>
+                <div class="matchField"></div>
+                <div class="matchField"></div>
+            </section>
+            <button id="startBet">Bet</button>
+        </section>
+        <section id="betField">
+            <button id="reduceBet">-</button>
+            <input id="bidValue" type="number" value="0">
+            <button id="enlargeBet">+</button>
+        </section>
+        <aside id="result">
+            <h3>Account balance: <span id="accountBalance"></span> $</h3>
+            <h3>Last game: <span id="lastGame"></span></h3>
+        </aside>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
